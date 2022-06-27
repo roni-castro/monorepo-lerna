@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Greeting } from '@vt/shared';
 
 function App() {
+  const [state, setState] = useState('state');
+
+  useEffect(() => {
+    setState('loaded');
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
@@ -17,7 +22,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {state}
         </a>
       </header>
     </div>

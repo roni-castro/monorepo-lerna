@@ -6,15 +6,13 @@
   "author": "Vijay T <vijayst@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^5.1.6"
   },
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
   "scripts": {
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "start:web1": "yarn --cwd packages/project1 start",
+    "start:web2": "yarn --cwd packages/project2 start",
+    "bootstrap": "yarn lerna bootstrap"
   }
 }
