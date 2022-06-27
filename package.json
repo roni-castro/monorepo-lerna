@@ -13,6 +13,7 @@
     "build": "lerna run build",
     "start:web1": "yarn --cwd packages/project1 start",
     "start:web2": "yarn --cwd packages/project2 start",
+    "start:mobile": "yarn --cwd packages/mobile start",
     "bootstrap": "yarn lerna bootstrap"
   }
 }
