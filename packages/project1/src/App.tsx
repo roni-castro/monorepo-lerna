@@ -7,14 +7,14 @@ function App() {
   const [state, setState] = useState('state');
 
   useEffect(() => {
-    setState('loaded');
+    setState('CRA web 1');
   }, []);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <Greeting />
+          <Greeting whom="Project 1" />
         </p>
         <a
           className="App-link"
